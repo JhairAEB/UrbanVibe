@@ -1,8 +1,8 @@
 /**
- * script.js - Archivo JavaScript principal para UrbanVibe
+ * script.js - UrbanVibe
  * 
  * Este archivo contiene todas las funcionalidades interactivas para la tienda online
- * de ropa urbana UrbanVibe, inspirada en romestore.pe pero con mejoras creativas.
+ * de ropa urbana UrbanVibe.
  * 
  * Incluye:
  * - Filtrado de productos por categoría
@@ -313,7 +313,7 @@ let cart = [];
 let selectedSize = '';
 let selectedQuantity = 1;
 
-// ==================== SELECTORES DOM ====================
+// ==================== SELECTORES DOM ( Sirve para seleccionar elementos HTML dentro de un documento mediante JavaScript) ====================
 // Elementos generales
 const categoryCards = document.querySelectorAll('.category-card');
 const filterButtons = document.querySelectorAll('.filter-btn');
