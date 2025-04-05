@@ -206,7 +206,7 @@ header {
     transform: scale(1.1);
 }
 
-/* ==================== HERO SECTION ==================== */
+/* ==================== HERO SECCION ==================== */
 .hero {
     height: 80vh;
     background: url('../images/hero-bg.jpg');
@@ -283,7 +283,7 @@ header {
     }
 }
 
-/* ==================== CATEGORIES SECTION ==================== */
+/* ==================== SECCION DE CATEGORIAS ==================== */
 .categories {
     padding: 5rem 0;
     background-color: var(--white-color);
@@ -338,7 +338,7 @@ header {
     padding-bottom: 2rem;
 }
 
-/* ==================== PRODUCTS SECTION ==================== */
+/* ==================== SECCION DE PRODUCTOS ==================== */
 .products {
     padding: 5rem 0;
     background-color: var(--light-color);
@@ -514,7 +514,7 @@ header {
     background-color: var(--primary-color);
 }
 
-/* ==================== CONTACT SECTION ==================== */
+/* ==================== SECCION DE CONTACTO ==================== */
 .contact {
     padding: 5rem 0;
     background-color: var(--white-color);
@@ -836,7 +836,7 @@ footer {
     background-color: var(--dark-color);
 }
 
-/* ==================== CART SIDEBAR ==================== */
+/* ==================== BARRA LATERAL DEL CARRITO ==================== */
 .cart-sidebar {
     position: fixed;
     top: 0;
@@ -1009,7 +1009,7 @@ footer {
     visibility: visible;
 }
 
-/* ==================== RESPONSIVE DESIGN ==================== */
+/* ==================== DISEÑO RESPONSIVO (DIFERENTES DISPOSTIVOS) ==================== */
 @media (max-width: 992px) {
     .section-title {
         font-size: 2rem;
@@ -1102,7 +1102,7 @@ footer {
     }
 }
 
-/* ==================== ANIMATIONS ==================== */
+/* ==================== ANIMACIONES ==================== */
 @keyframes fadeIn {
     from {
         opacity: 0;
