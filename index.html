@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanVibe - Tienda de Ropa Urbana</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado con logo y menú de navegación -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>UrbanVibe</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Descubre tu estilo urbano</h2>
+            <p>Las últimas tendencias en moda urbana</p>
+            <a href="#productos" class="btn">Ver Colección</a>
+        </div>
+    </section>
+
+    <!-- Sección de categorías -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Categorías</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="camisetas">
+                    <img src="images/camisetas/structure_boxy_tee_1.jpeg" alt="Camisetas">
+                    <h3>Camisetas</h3>
+                </div>
+                <div class="category-card" data-category="camisas">
+                    <img src="images/camisas/pin_up_zero_sleeve_1.jpeg" alt="Camisas">
+                    <h3>Camisas</h3>
+                </div>
+                <div class="category-card" data-category="shorts">
+                    <img src="images/shorts/boxer_short_1.jpeg" alt="Shorts">
+                    <h3>Shorts</h3>
+                </div>
+                <div class="category-card" data-category="pantalones">
+                    <img src="images/pantalones/float_fit_pants_1.jpeg" alt="Pantalones">
+                    <h3>Pantalones</h3>
+                </div>
+                <div class="category-card" data-category="accesorios">
+                    <img src="images/accesorios/trust_cap_1.jpeg" alt="Accesorios">
+                    <h3>Accesorios</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="camisetas">Camisetas</button>
+                <button class="filter-btn" data-filter="camisas">Camisas</button>
+                <button class="filter-btn" data-filter="shorts">Shorts</button>
+                <button class="filter-btn" data-filter="pantalones">Pantalones</button>
+                <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+            </div>
+            <div class="product-grid">
+                <!-- Productos de Camisetas -->
+                <div class="product-card" data-category="camisetas">
+                    <div class="product-image">
+                        <img src="images/camisetas/heaven_top_tee_1.jpg" alt="Heaven Top Tee">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="heaven_top_tee">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Heaven Top Tee</h3>
+                        <p class="price">S/. 59.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="heaven_top_tee" data-price="59.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="camisetas">
+                    <div class="product-image">
+                        <img src="images/camisetas/genesis_top_tee_1.jpg" alt="Genesis Top Tee">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="genesis_top_tee">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Genesis Top Tee</h3>
+                        <p class="price">S/. 49.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="genesis_top_tee" data-price="49.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="camisetas">
+                    <div class="product-image">
+                        <img src="images/camisetas/distortion_top_tee_1.jpg" alt="Distortion Top Tee">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="distortion_top_tee">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Distortion Top Tee</h3>
+                        <p class="price">S/. 49.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="distortion_top_tee" data-price="49.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="camisetas">
+                    <div class="product-image">
+                        <img src="images/camisetas/structure_boxy_tee_1.jpeg" alt="Structure Boxy Tee">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="structure_boxy_tee">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Structure Boxy Tee</h3>
+                        <p class="price">S/. 89.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="structure_boxy_tee" data-price="89.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="camisetas">
+                    <div class="product-image">
+                        <img src="images/camisetas/tennis_box_tee_1.jpg" alt="Tennis Box Tee">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="tennis_box_tee">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tennis Box Tee</h3>
+                        <p class="price">S/. 89.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="tennis_box_tee" data-price="89.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Productos de Camisas -->
+                <div class="product-card" data-category="camisas">
+                    <div class="product-image">
+                        <img src="images/camisas/cozy_knit_shirt_1.jpg" alt="Cozy Knit Shirt">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="cozy_knit_shirt">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cozy Knit Shirt</h3>
+                        <p class="price">S/. 119.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="cozy_knit_shirt" data-price="119.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="camisas">
+                    <div class="product-image">
+                        <img src="images/camisas/rumble_shirt_1.jpg" alt="Rumble Shirt">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="rumble_shirt">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rumble Shirt</h3>
+                        <p class="price">S/. 119.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="rumble_shirt" data-price="119.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="camisas">
+                    <div class="product-image">
+                        <img src="images/camisas/resort_zero_sleeve_1.jpg" alt="Resort Zero Sleeve">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="resort_zero_sleeve">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Resort Zero Sleeve</h3>
+                        <p class="price">S/. 65.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="resort_zero_sleeve" data-price="65.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="camisas">
+                    <div class="product-image">
+                        <img src="images/camisas/pin_up_zero_sleeve_1.jpeg" alt="Pin Up Zero Sleeve">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="pin_up_zero_sleeve">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pin Up Zero Sleeve</h3>
+                        <p class="price">S/. 59.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="pin_up_zero_sleeve" data-price="59.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="camisas">
+                    <div class="product-image">
+                        <img src="images/camisas/flamingo_shirt_1.jpg" alt="Flamingo Shirt">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="flamingo_shirt">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Flamingo Shirt</h3>
+                        <p class="price">S/. 99.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="flamingo_shirt" data-price="99.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Productos de Shorts -->
+                <div class="product-card" data-category="shorts">
+                    <div class="product-image">
+                        <img src="images/shorts/boxer_short_1.jpeg" alt="Boxer Short">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="boxer_short">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Boxer Short</h3>
+                        <p class="price">S/. 99.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="boxer_short" data-price="99.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shorts">
+                    <div class="product-image">
+                        <img src="images/shorts/rush_shorts_1.jpg" alt="Rush Shorts">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="rush_shorts">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rush Shorts</h3>
+                        <p class="price">S/. 69.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="rush_shorts" data-price="69.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shorts">
+                    <div class="product-image">
+                        <img src="images/shorts/new_fenix_cargo_short_1.jpg" alt="New Fenix Cargo Short">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="new_fenix_cargo_short">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>New Fenix Cargo Short</h3>
+                        <p class="price">S/. 119.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="new_fenix_cargo_short" data-price="119.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shorts">
+                    <div class="product-image">
+                        <img src="images/shorts/textured_short_1.jpg" alt="Textured Short">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="textured_short">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Textured Short</h3>
+                        <p class="price">S/. 119.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="textured_short" data-price="119.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="shorts">
+                    <div class="product-image">
+                        <img src="images/shorts/beach_short_1.jpg" alt="Beach Short">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="beach_short">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Beach Short</h3>
+                        <p class="price">S/. 89.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="beach_short" data-price="89.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Productos de Pantalones -->
+                <div class="product-card" data-category="pantalones">
+                    <div class="product-image">
+                        <img src="images/pantalones/float_fit_pants_1.jpeg" alt="Float Fit Pants">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="float_fit_pants">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Float Fit Pants</h3>
+                        <p class="price">S/. 119.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="float_fit_pants" data-price="119.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pantalones">
+                    <div class="product-image">
+                        <img src="images/pantalones/nobby_pants_1.jpg" alt="Nobby Pants">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="nobby_pants">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nobby Pants</h3>
+                        <p class="price">S/. 119.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="nobby_pants" data-price="119.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pantalones">
+                    <div class="product-image">
+                        <img src="images/pantalones/cargo_pants_1.jpg" alt="Cargo Pants">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="cargo_pants">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cargo Pants</h3>
+                        <p class="price">S/. 129.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="cargo_pants" data-price="129.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pantalones">
+                    <div class="product-image">
+                        <img src="images/pantalones/denim_jeans_1.jpg" alt="Denim Jeans">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="denim_jeans">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Denim Jeans</h3>
+                        <p class="price">S/. 139.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="denim_jeans" data-price="139.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pantalones">
+                    <div class="product-image">
+                        <img src="images/pantalones/jogger_pants_1.jpg" alt="Jogger Pants">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="jogger_pants">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jogger Pants</h3>
+                        <p class="price">S/. 109.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="jogger_pants" data-price="109.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <!-- Productos de Accesorios -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="images/accesorios/trust_cap_1.jpeg" alt="Trust Cap">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="trust_cap">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Trust Cap</h3>
+                        <p class="price">S/. 59.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">Única</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="trust_cap" data-price="59.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="images/accesorios/urban_backpack_1.jpg" alt="Urban Backpack">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="urban_backpack">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Urban Backpack</h3>
+                        <p class="price">S/. 129.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">Única</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="urban_backpack" data-price="129.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="images/accesorios/streetwear_belt_1.jpg" alt="Streetwear Belt">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="streetwear_belt">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Streetwear Belt</h3>
+                        <p class="price">S/. 49.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="streetwear_belt" data-price="49.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="images/accesorios/urban_socks_1.jpg" alt="Urban Socks">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="urban_socks">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Urban Socks</h3>
+                        <p class="price">S/. 29.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="urban_socks" data-price="29.00">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="images/accesorios/city_wallet_1.jpg" alt="City Wallet">
+                        <div class="product-overlay">
+                            <button class="view-product" data-product="city_wallet">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>City Wallet</h3>
+                        <p class="price">S/. 39.00</p>
+                        <div class="product-sizes">
+                            <span>Tallas:</span>
+                            <div class="size-options">
+                                <button class="size-btn">Única</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn" data-product="city_wallet" data-price="39.00">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Pirámide del Sol N° 810, San Juan de Lurigancho, Lima, Perú. </p>
+                    <p><i class="fas fa-phone"></i> +51 987 343 234</p>
+                    <p><i class="fas fa-envelope"></i> info@urbanvibe.com</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>© 2025 UrbanVibe | Todos los Derechos Reservados</p>
+        </div>
+    </footer>
+
+    <!-- Modal para visualización de productos -->
+    <div class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product-details">
+                <div class="modal-product-gallery">
+                    <div class="main-image">
+                        <img src="" alt="Producto" id="modal-main-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="" alt="Thumbnail 1" class="thumbnail" data-index="0">
+                        <img src="" alt="Thumbnail 2" class="thumbnail" data-index="1">
+                        <img src="" alt="Thumbnail 3" class="thumbnail" data-index="2">
+                        <img src="" alt="Thumbnail 4" class="thumbnail" data-index="3">
+                    </div>
+                </div>
+                <div class="modal-product-info">
+                    <h2 id="modal-product-name"></h2>
+                    <p class="modal-price" id="modal-product-price"></p>
+                    <div class="modal-product-description">
+                        <p id="modal-product-description"></p>
+                    </div>
+                    <div class="modal-product-sizes">
+                        <span>Tallas:</span>
+                        <div class="modal-size-options">
+                            <button class="modal-size-btn">S</button>
+                            <button class="modal-size-btn">M</button>
+                            <button class="modal-size-btn">L</button>
+                            <button class="modal-size-btn">XL</button>
+                        </div>
+                    </div>
+                    <div class="modal-product-quantity">
+                        <span>Cantidad:</span>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <button class="modal-add-to-cart-btn">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrito de compras -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Carrito de Compras</h2>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items">
+            <!-- Los items del carrito se agregarán dinámicamente aquí -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">S/. 0.00</span>
+            </div>
+            <button class="checkout-btn">Comprar</button>
+        </div>
+    </div>
+
+    <!-- Overlay para modales -->
+    <div class="overlay"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
